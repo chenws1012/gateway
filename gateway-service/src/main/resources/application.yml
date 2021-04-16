@@ -1,0 +1,12 @@
+server:
+  port: 10005
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: baidu
+          uri: https://www.baidu.com
+          predicates:
+            - Path=/
+
